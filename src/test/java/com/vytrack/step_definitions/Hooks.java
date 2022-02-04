@@ -14,6 +14,14 @@ public class Hooks {
     public void tearDown(){
         System.out.println("\tthis is coming from AFTER");
     }
+    @Before("@db")
+    public void setUpdb(){
+        System.out.println("\tconnecting to database");
+    }
 
+    @After("@db")
+    public void closeDb(){
+        System.out.println("\tdisconnecting to database");
+    }
 
 }

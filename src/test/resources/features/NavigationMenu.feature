@@ -7,6 +7,7 @@ Feature: Navigation Menu
     When the user navigates to Fleet, Vehicles
     Then  user should see vehicles page
 
+    @db
     Scenario: Navigating Marketing -- Campaigns
       Given  the user is on the login page
       And the user enters the sales manager information
