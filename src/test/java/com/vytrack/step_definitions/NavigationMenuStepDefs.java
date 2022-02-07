@@ -5,9 +5,9 @@ import com.vytrack.pages.DashboardPage;
 import com.vytrack.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
+import junit.framework.Assert;
 
-class NavigationMenuStepDefs {
+public class NavigationMenuStepDefs {
     @When("the user navigates to Fleet, Vehicles")
     public void the_user_navigates_to_Fleet_Vehicles() {
         //selenium code
@@ -56,7 +56,5 @@ class NavigationMenuStepDefs {
 
         Assert.assertEquals(expectedPageNum,actualNumber);
     }
-
-
 
 }
