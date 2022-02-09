@@ -1,6 +1,7 @@
 @navigate
 Feature: Navigation Menu
 
+  @db
   Scenario: Navigating Fleet -- Vehicles
     Given  the user is on the login page
     And the user enters the sales manager information

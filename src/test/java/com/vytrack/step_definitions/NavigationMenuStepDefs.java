@@ -13,22 +13,21 @@ public class NavigationMenuStepDefs {
         //selenium code
         System.out.println("the user navigates to Fleet, Vehicles");
     }
-
-    @Then("the title should be Vehicles")
-    public void the_title_should_be_Vehicles() {
-        System.out.println("Expected and Actual title are matching");
+    @Then("user should see vehicles page")
+    public void user_should_see_vehicles_page() {
+        System.out.println("see the vehicles page");
+    }
+    @When("user navigates to Marketing, Campaigns")
+    public void user_navigates_to_Marketing_Campaigns() {
+        System.out.println("campaign");
     }
 
-    @When("the user navigates to Marketing, Campaigns")
-    public void the_user_navigates_to_Marketing_Campaigns() {
-        System.out.println("the user navigates to Marketing, Campaigns");
 
+    @Then("user should see Campaigns")
+    public void user_should_see_Campaigns() {
+        System.out.println("campaign");
     }
 
-    @Then("title should be Campaigns")
-    public void title_should_be_Campaigns() {
-        System.out.println("Expected and Actual title are matching");
-    }
 
     @When("the user navigates to Activities, Calendar Events")
     public void the_user_navigates_to_Activities_Calendar_Events() {
@@ -45,6 +44,7 @@ public class NavigationMenuStepDefs {
     @When("the user navigates to {string} {string}")
     public void the_user_navigates_to(String tab, String module) {
         new DashboardPage().navigateToModule(tab,module);
+
     }
 
 
